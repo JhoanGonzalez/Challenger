@@ -1,9 +1,23 @@
-    var texto = document.querySelector(".texto");
-    var encriptado;
-    var desencriptado;
+    const texto = document.querySelector(".texto");
+    const mensaje = document.querySelector(".mensaje");
 
+    function btmEncriptar(){
+        const textEncriptado = encriptar(texto.value);
+        mensaje.value = textEncriptado;
+        texto.value = "";
+        mensaje.style.backgroundImage = "none";
+    }
+    function btmDesencriptar(){
+        const textDesencriptado = desencriptador(texto.value);
+        mensaje.value = textDesencriptado;
+        texto.value = "";
+    }
+    function btmCopiar(){
+
+    }
     function encriptar(texto){
         encriptado = [];
+        texto = texto.toLowerCase();
         for(var p = 0;p < texto.length;p++){
             if(texto[p] == "a"){
                 encriptado = encriptado + "ai";
@@ -36,6 +50,7 @@
     }
     function desencriptador(texto){
         desencriptado = [];
+        texto = texto.toLowerCase();
         for(var p = 0;p < texto.length;p++){
             if(texto[p]=="a"){
                 desencriptado = desencriptado + texto[p];
@@ -71,9 +86,3 @@
         }
         return desencriptado;
     }
-    
-    encriptado = encriptar(texto);
-    document.write(encriptado + "<br>");
-    desencriptado = desencriptador(encriptado)
-    document.write(desencriptado + "<br>");
-    
