@@ -1,4 +1,4 @@
-    var texto = prompt();
+    var texto = document.querySelector(".texto");
     var encriptado;
     var desencriptado;
 

@@ -2,28 +2,35 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="reset.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="Logo.png">
-            </div>
+            <img class="logo" src="Logo.png" alt="logo alura">
         </header>
         <main>
-            <textarea cols="70" rows="10" id="mensaje" class="texto" placeholder="Ingrese el texto aqui"></textarea>
-            <input type="submit" value="Encriptar" class="enviar">
-            <input type="submit" value="Desencriptar" class="enviar">
-            <ul class="exclamacion">
-                <li><p class="excla">&#xF332;</p></li>
-                <li><p class="solo">Solo letras minúsculas y sin acentos</p></li>
-            </ul>
-            <ul class="rectangulo">
-                <li class="Muñeco"><img src="Muñeco.png"></li>
-                <li class="mensaje">Ningun mensaje fue encontrado</li>
-                <li class="texto">Ingrese el texto que desees encriptar o desencriptar</li>
-            </ul>
+            <section>
+                <textarea class="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                    <h6 class="regla">! Solo letras minusculas y sin acentos</h6>
+                </div>
+                <div class="boton">
+                    <button class="encriptar">Encriptador</button>
+                    <button class="desencriptar">Desencriptador</button>
+                </div>
+            </section>
+            <section>
+                <textarea class="mensaje" cols="20" rows="10"></textarea>
+                <div>
+                    <button class="copiar">Copiar</button>
+                </div>
+            </section>
         </main>
         <script src="script.js"></script>
     </body>
