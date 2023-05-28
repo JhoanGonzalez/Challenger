@@ -16,7 +16,7 @@
         </header>
         <main>
             <section>
-                <textarea class="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea class="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui" id="mensaje1"></textarea>
                 <div>
                     <h6 class="regla">! Solo letras minusculas y sin acentos</h6>
                 </div>
@@ -26,9 +26,9 @@
                 </div>
             </section>
             <section>
-                <textarea class="mensaje" cols="20" rows="10"></textarea>
+                <textarea class="mensaje" cols="20" rows="10" placeholder="Ningun mensaje fue encontrado" id="mensaje2"></textarea>
                 <div>
-                    <button class="copiar">Copiar</button>
+                    <button class="copiar" onclick="btmCopiar()">Copiar</button>
                 </div>
             </section>
         </main>

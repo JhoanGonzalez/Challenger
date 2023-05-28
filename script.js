@@ -13,7 +13,7 @@
         texto.value = "";
     }
     function btmCopiar(){
-
+        texto.value = mensaje.value;
     }
     function encriptar(texto){
         encriptado = [];
